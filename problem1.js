@@ -15,7 +15,20 @@ For n = 5, the output should be:
 */
 
 function printTriangle(n) {
+    for (let i = 0; i < n + 1; i++) {
+        let line = "";
+        for (let j = 0; j < n + 1 - i; j++) {
+            //console.log(" ");
+            line = line + " ";
+        }
+        for (let j = 0; j < i; j++) {
+            //console.log("*");
+            line = line + "*";
 
+        }
+        console.log(line);
+
+    }
     // TODO: Implement this function
 
 }

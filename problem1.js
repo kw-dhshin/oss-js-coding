@@ -16,7 +16,20 @@ For n = 5, the output should be:
 
 function printTriangle(n) {
 
-    // TODO: Implement this function
+    let i=0;
+    for(i=0;i<n;i++){
+        for(k=0;k<n;k++){
+            if(k>=(n-i)){
+                console.log('*');
+            }
+            else{
+                console.log(' ');
+            }
+            
+            
+        }
+        console.log('/n');
+    }
 
 }
 

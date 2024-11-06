@@ -17,6 +17,14 @@ For n = 5, the output should be:
 function printTriangle(n) {
 
     // TODO: Implement this function
+    for (let i = 1; i <= n; i++) {
+        // Calculate the number of spaces and asterisks for the current row
+        let spaces = ' '.repeat(n - i);
+        let asterisks = '*'.repeat(i);
+
+        // Concatenate spaces and asterisks, then print the result
+        console.log(spaces + asterisks);
+    }
 
 }
 

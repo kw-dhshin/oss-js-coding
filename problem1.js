@@ -17,7 +17,11 @@ For n = 5, the output should be:
 function printTriangle(n) {
 
     // TODO: Implement this function
-
+    for (let i = 1; i <= n; i++) {
+        let spaces = ' '.repeat(n - i);  // 왼쪽 공백 추가
+        let stars = '*'.repeat(i);       // 별 추가
+        console.log(spaces + stars);     // 한 줄에 출력
+    }
 }
 
 // Example usage:

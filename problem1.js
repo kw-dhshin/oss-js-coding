@@ -1,13 +1,13 @@
 function printTriangle(n) {
     for (let i = 1; i <= n; i++) {
-        let row = '';
+        let space = '';
         for (let j = 1; j <= n - i; j++) {
-            row += ' ';
+            space += ' ';
         }
         for (let k = 1; k <= i; k++) {
-            row += '*';
+            space += '*';
         }
-        console.log(row);
+        console.log(space);
     }
 }
 printTriangle(5);

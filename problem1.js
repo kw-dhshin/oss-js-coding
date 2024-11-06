@@ -16,7 +16,10 @@ For n = 5, the output should be:
 
 function printTriangle(n) {
 
-    // TODO: Implement this function
+    for(var i = 1; i <=n; i++){
+        console.log(" ".repeat(n - i) + "*".repeat(i)); 
+     }
+     
 
 }
 

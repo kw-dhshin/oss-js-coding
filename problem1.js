@@ -15,7 +15,16 @@ For n = 5, the output should be:
 */
 
 function printTriangle(n) {
-
+    if (n <= 0) {
+        console.log("Invalid Input: 0 or Negative");
+        return;
+    }
+    for (let i = 0; i < n; i++) {
+        for (let j = n - i - 1; j > 0; j--)
+            process.stdout.write(" ")       
+        for (let j = 0; j < i; j++)
+            process.stdout.write("*")
+    }
     // TODO: Implement this function
 
 }

@@ -15,9 +15,18 @@ For n = 5, the output should be:
 */
 
 function printTriangle(n) {
-
+    let stars = "";
     // TODO: Implement this function
-
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= n - i; j++) {
+            stars = stars + " ";
+        }
+        for (let j = 1; j <= i; j++) {
+            stars = stars + "*";
+        }
+        stars += "\n";
+    }
+    console.log(stars);
 }
 
 // Example usage:

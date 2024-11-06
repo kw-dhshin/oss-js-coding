@@ -15,9 +15,12 @@ For n = 5, the output should be:
 */
 
 function printTriangle(n) {
-
-    // TODO: Implement this function
-
+for (let i = 1; i <= rows; i++)
+    {
+        let spaces = " ".repeat(rows - i);
+        let stars = "*".repeat(i);
+        console.log(spaces + stars);
+    }
 }
 
 // Example usage:

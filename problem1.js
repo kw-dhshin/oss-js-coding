@@ -16,7 +16,8 @@ For n = 5, the output should be:
 
 function printTriangle(n) {
 
-    // TODO: Implement this function
+    for(int i = 0 ; i<n;i++)
+        print("*");
 
 }
 
